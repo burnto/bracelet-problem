@@ -42,11 +42,11 @@ for (let i = 0; i <= 9; i++) {
 
 const margin = 10;
 
-const maxBeadSize = 20;
+const maxBeadSize = 40;
 const maxPadSize = 5;
 
-const canvasWidth = 800;
-const canvasHeight = 600;
+const canvasWidth = 1000;
+const canvasHeight = 700;
 
 let displayAsCircleCheckbox;
 let number1;
