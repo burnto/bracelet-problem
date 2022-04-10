@@ -71,8 +71,12 @@ function setup() {
 
 function draw() {
   background(255);
-  const i = parseInt(number1.value(), 10);
-  const j = parseInt(number2.value(), 10);
+  let i = parseInt(number1.value(), 10) || 0;
+  let j = parseInt(number2.value(), 10) || 0;
+  i = constrain(i, 0, 9);
+  j = constrain(j, 0, 9);
+  console.log(i, j);
+
   const beads = getbracelet(i, j);
 
   if (displayAsCircleCheckbox.checked()) {
