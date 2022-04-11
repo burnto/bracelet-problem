@@ -45,8 +45,8 @@ const margin = 10;
 const maxBeadSize = 40;
 const maxPadSize = 5;
 
-const canvasWidth = 1000;
-const canvasHeight = 700;
+const canvasWidth = 600;
+const canvasHeight = 500;
 
 let displayAsCircleCheckbox;
 let number1;
@@ -60,7 +60,6 @@ function setup() {
 
   createElement("br");
   displayAsCircleCheckbox = createCheckbox("Bracelet");
-  createElement();
   number1 = createInput("0", "number");
   number1.attribute("min", 0);
   number1.attribute("max", 9);
@@ -75,7 +74,6 @@ function draw() {
   let j = parseInt(number2.value(), 10) || 0;
   i = constrain(i, 0, 9);
   j = constrain(j, 0, 9);
-  console.log(i, j);
 
   const beads = getbracelet(i, j);
 
